@@ -1,0 +1,4 @@
+FROM openjdk:11
+ADD codaGlobal-0.0.1-SNAPSHOT.jar codaGlobal-0.0.1-SNAPSHOT.jar
+EXPOSE 8080
+ENTRYPOINT ["java" , "-jar" , "codaGlobal-0.0.1-SNAPSHOT.jar" , ".src/main/java/com/VotingApp/codaGlobal/CodaGlobalApplication"]
